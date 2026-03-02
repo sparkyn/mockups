@@ -1,0 +1,30 @@
+@media screen and (max-width:980px) {
+    .sys_clearing-nav { display: none !important; }
+    #section-nav { display: block; }
+    #section-nav .sys_section-nav-home { display: block !important; }
+    #section-nav .sys_container { height: auto; }
+    #section-nav ul#section-menu { height: auto; display: flex; flex-wrap: wrap; justify-content: flex-start; }
+    #section-nav ul#section-menu li { height: auto; padding: 0; }
+    #section-nav ul#section-menu li a { padding: 8px; border-right: none; }
+    .sys_select-list-ul-container { float: none; padding: 0; }
+    #section-nav ul#section-menu li.sys_selected { border-top: none; }
+    #section-nav ul#section-menu li:first-child { padding-left: 0; }
+}
+
+/* additional styles for Clearing acceptance form */
+#page-body section .sys_cms-form-control .sys_cms-form-body li.sys_visa-fields {
+    border-left: 1px solid #ccc;
+    padding-left: 16px;
+    border-right: 1px solid #ccc;
+    padding-right: 16px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+  #page-body section .sys_cms-form-control .sys_cms-form-body li.sys_visa-fields-first {
+    border-top: 1px solid #ccc;
+  }
+  #page-body section .sys_cms-form-control .sys_cms-form-body li.sys_visa-fields-last {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+    margin-bottom: 5px;
+  }

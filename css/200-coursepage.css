@@ -1,0 +1,639 @@
+header.sys_bacchus { max-width: 100%; box-sizing: border-box; padding: 0 10px; }
+header.sys_bacchus #top-nav .sys_container { height: 0; }
+
+#course-nav { position: relative; }
+
+/* entry requirements on course page */
+.sys_entry-reqs, .sys_key-facts, .sys_highlight-box { background-color: #fff; color: #000; padding: 12px 0; margin-bottom: 0px; }
+.sys_highlight-box { margin-bottom: 16px; margin-top: 28px; background: #e7e7e7; padding: 23px 70px 23px 22px; border-radius: 8px; }
+.sys_key-facts { margin-top: 0; margin-bottom: 16px; background: #e7e7e7; padding: 23px 70px 23px 22px; border-radius: 8px; }
+.sys_highlight-box-clearing-2022 { margin-top: -40px; margin-bottom: 16px; background: url("../img/clearing-box-bg.png?f=webp") no-repeat top left; background-size: cover; text-align: center; padding: 58px 64px; box-sizing: border-box; }
+.sys_highlight-box-clearing-2022 p.sys_nounderline { border: none; }
+.sys_key-facts p:last-child, .sys_highlight-box-clearing-2022 p:last-child { margin-bottom: 0; }
+#page-body section .sys_key-facts p:last-child { margin-bottom: 0; }
+section .sys_entry-reqs h3, section .sys_key-facts h3, section .sys_highlight-box h3 { color: #000; border-top: none; font-size: 1.6em; margin-bottom: 0.2em; text-transform: uppercase; font-family: 'Gabarito', Arial, sans-serif; }
+#page-body section .sys_key-facts h3 { font-size: 1.5rem; text-transform: none; font-family: 'Figtree', Arial, sans-serif; }
+.sys_entry-reqs p, .sys_key-facts p, .sys_highlight-box p { padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; }
+section .sys_key-facts p a, section .sys_key-facts li a, section .sys_highlight-box p a, section .sys_highlight-box li a { color: #c03240; }
+section .sys_key-facts p a:hover, section .sys_key-facts li a:hover, section .sys_highlight-box p a:hover, section .sys_highlight-box li a:hover { color: #006da4; }
+.sys_highlight-box-clearing-2022 p { padding-top: 12px; padding-bottom: 12px; margin-bottom: 8px; }
+.sys_highlight-box h3 { font-size: 1.5rem; text-transform: none; font-family: 'Figtree', Arial, sans-serif;  }
+.sys_key-facts p { border-bottom: none; padding-left: 20px; background: url("../img/icon-arrow-10px.png") no-repeat left 13px; }
+#summary .sys_highlight-box-clearing-2022 h3 { font-size: 1.7rem; }
+ .sys_highlight-box-clearing-2022 .sys_highlight-first-line { padding-left: 60px; padding-right: 60px; }
+#summary p.sys_key-facts-spaced { margin-bottom: 4px; }
+#page-body .sys_highlight-box-clearing-2022 .opening-hours-list { border-top: 1px solid black; margin-top: 20px; padding-top: 20px; text-align: left; padding-left: 0; padding-right: 0; }
+#page-body #summary .opening-hours-list .ui-accordion-header { background: url("../img/plus-icon.png") no-repeat right center; padding-left: 0 !important; padding-right: 0; display: block !important; font-weight: bold; }
+#page-body #summary .opening-hours-list .ui-accordion-header.ui-state-active { background: url("../img/minus-icon.png") no-repeat right center;  }
+#page-body #summary .sys_next-steps-container .opening-hours-list .ui-accordion-header { background: url("../img/plus-icon-white.png") no-repeat right center; }
+#page-body #summary .sys_next-steps-container .opening-hours-list .ui-accordion-header.ui-state-active { background: url("../img/minus-icon-white.png") no-repeat right center;  }
+#page-body .sys_highlight-box-clearing-2022 .opening-hours-list td { padding-left: 0; }
+.sys_key-facts.sys_apply-online { margin-top: 24px; }
+.sys_key-facts.sys_apply-online p { padding-left: 0; background: none; }
+#summary .sys_highlight-box-clearing-2024 { margin-top: 0; margin-bottom: 16px; background: #e7e7e7; padding: 23px 70px 23px 22px; border-radius: 8px; text-align: left; }
+#summary .sys_highlight-box-clearing-2024 h3 { font-size: 1.5rem; text-transform: none; font-family: 'Figtree', Arial, sans-serif; }
+#summary .sys_highlight-box-clearing-2024 p { padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; }
+
+@media screen and (max-width:980px) {
+	.sys_highlight-box-clearing-2022 .sys_highlight-first-line { padding-left: 10px; padding-right: 10px; }
+}
+#summary .sys_span6:last-of-type {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+#summary .sys_span6:last-of-type .sys_highlight-box-clearing-2022 {
+	order: 1;
+}
+#summary .sys_span6:last-of-type .sys_key-facts {
+	order: 3;
+}
+.sys_highlight-box {
+	margin-top: 8px;
+	order: 4;
+}
+#summary .sys_span6:last-of-type .sys_cta-bar-secondary, #summary .sys_span6:last-of-type .sys_cta-bar-primary { 
+	margin: 0; 
+}
+h3.ui-accordion-header:focus-visible {
+	outline: 1px dashed #000;
+}
+@media screen and (max-width:768px) {
+	#page-body #summary {
+		padding-top: 16px;
+	}
+	#summary .sys_row {
+    	display: flex;
+		flex-direction: column;
+	}
+	#summary .sys_row .sys_span12 {
+		order: 2;
+	}
+	#summary .sys_row .sys_span6 {
+		order: 3;
+	}
+	#summary .sys_row .sys_span6:last-child {
+		order: 1;
+	}
+	.sys_highlight-box-clearing-2022 {
+		margin-top: 0;
+		padding: 36px 32px; 
+	}
+	.sys_highlight-box-clearing-2022 .sys_highlight-first-line { padding-left: 10px; padding-right: 10px; }
+}
+/* declare a class to allow editors to stop certain elements falling at the end of a column - doesn't actually affect the display of the element */
+.reqsdontend {  }
+@media screen and (min-width:767px) {
+	.sys_columnized .sys_span12 { column-count: 2; column-gap: 16px; }
+	.sys_columnized .sys_span12 p  { -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */ page-break-inside: avoid; /* Firefox */ break-inside: avoid; /* IE 10+ */ }
+}
+
+/* list of fees on course page */
+section .sys_fees-list p { font-family: 'Figtree', Arial, sans-serif; font-weight: bold; border-bottom: 1px solid #6d6e71; font-size: 1.1em; height: auto; position: relative; padding-right: 100px; }
+section .sys_fees-list p span.sys_type { float: left; }
+section .sys_fees-list p span.sys_amount { float: right; }
+
+/* UNISTATS figures */
+section p.sys_unistats strong { font-size: 1.1em; }
+section p.sys_unistats strong span { font-size: 1.2em; }
+img.sys_unistats-widget { display: block; margin: auto; }
+iframe#unistats-widget-frame { margin: 0; float: right; }
+
+/* set of tabs within an individual section - course page-specific */
+.sys_section-content h3 { font-size: 1.2em; margin-top: 0; border: none; color: #6d6e71; }
+body .sys_section-content-tab { min-height: 0; }
+ul.sys_section-tabs li a { color: #000; }
+ul.sys_section-tabs li.sys_selected, .sys_grey ul.sys_section-tabs li.sys_selected { background-color: #08e8de;  }
+ul.sys_section-tabs li.sys_selected a, .sys_grey ul.sys_section-tabs li.sys_selected a { color: #000; }
+@media screen and (max-width:767px) {
+.sys_section-tabs  { display: none; }
+}
+@media screen and (max-width:767px) {
+	.sys_next-tab a, .sys_next-tab a:link, .sys_next-tab a:visited, .sys_next-tab a:hover, .sys_next-tab a:active { background-color: #08e8de; color: #000; }
+}
+
+/* styles for when each top element is docked (course page) */
+/*body.sys_top-header-fixed #course-nav { padding-top: 257px; } */
+
+/* design refresh 2018 overrides, including bacchus 2026 */
+#masthead-links ul { color: #000; }
+#masthead-links ul li { border-right: none; }
+#masthead-links ul li a { color: #000; }
+#banner-img-bacchus img { border-radius: 12px; clip-path: polygon(0px 0px, 90% 0px, 100% 100%, 0px 100%); }
+.sys_key-facts-bacchus { background-color: pink; border-radius: 12px; padding: 20px 30px 20px 22px; }
+.sys_key-facts-bacchus h2 { margin: 0; font-size: 1.5rem; }
+
+@media screen and (max-width:980px) {
+	#banner-and-navs { height: auto; }
+	#banner-img { height: 219px; }
+	#banner-and-navs #page-heading { padding-top: 146px; }
+	body.sys_mobile-search-open #banner-and-navs #page-heading { padding-top: 206px; }
+	body.sys_mobile-nav-open header #banner-and-navs { height: auto; }
+	body.sys_mobile-nav-open #banner-and-navs #page-heading { padding-top: 0; margin-top: -70px; }
+}
+
+
+/* course page-specific styles */
+/*green colour: #6fa97d */
+#banner-and-navs { background-color: #fff; /*background-image: url('../img/banner.jpg');*/ }
+#masthead { background-color: #fff; }
+#top-nav { background-color: #fff; }
+#page-heading { padding-top: 195px; overflow: hidden; }
+header.sys_bacchus h1 { background-color: #fff; line-height: 1.1em; color: #000; font-family: 'Figtree', Arial, sans-serif; font-weight: bold; font-size: 1.9em; margin-left: 0; margin-bottom: 0; padding: 12px 0 12px 0; }
+header.sys_bacchus h1 span { color: #555; font-size: 0.85em; display: block; }
+@media screen and (max-width:980px) {
+	#page-heading { padding-top: 166px; }
+	header #page-heading h1 { padding-right: 10px; margin-right: 10px; display: block; width: auto !important; padding-left: 10px; }
+}
+@media screen and (max-width:767px) {
+	header #page-heading h1 { padding-left: 10px; }
+}
+
+section h2 { color: #000; border-bottom: none; border-top: none; text-transform: none; padding-top: 0; }
+section:first-child h2 { border-top: none; padding-top: 0; }
+#freePanelHolder section h2, #freePanelHolderArts section h2 { border-top: none; padding-top: 0; }
+section h3 { color: #0065bd; }
+
+#page-body section ul li { margin-bottom: 12px; }
+
+/*section { padding-bottom: 16px; }*/
+
+@media screen and (max-width:768px) {
+	#page-body .sys_section-content .sys_span6 .sys_tabHeading, #page-body .sys_section-content .sys_span12 .sys_tabHeading, #page-body .sys_section-content .sys_span8 .sys_tabHeading { color: #000; }
+    #page-body section h2 { font-size: 1.8rem; line-height: 1.6em; }
+	
+	#banner-and-navs { height: auto; }
+	#page-heading { padding-top: 199px; }
+	#page-heading h1 { margin-left: 0; margin-right: 0; font-size: 1.7em; line-height: 1.5em; }
+}
+
+#course-nav .sys_container {  } 
+#course-nav { border-bottom: none; height: 80px; background: #323e48; box-shadow: 0 4px 2px -2px #aaa; }
+
+#course-nav ul { color: #000; font-family: 'Figtree', Arial, sans-serif; font-weight: normal; font-size: 1.1em; list-style-type: none; height: 80px; margin: 0; padding: 8px 24px; text-align: center; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; gap: 24px; box-sizing: border-box;}
+#course-nav ul li a, #course-nav ul li a:focus, #course-nav ul li a:active, #course-nav ul li a:hover { color: #000; text-decoration: none; display: block; height: 64px; padding: 15px 12px 15px 12px; background-color: transparent; outline: none; box-sizing: border-box; border-radius: 12px; }
+#course-nav ul li a:active, #course-nav ul li a:hover { background-color: #08e8de; color: #000; }
+#course-nav li { display: block; float: left; background-color: #323e48; margin-right: 6px; line-height: 1.1em; font-weight: bold; }
+#course-nav li { background-color: #fff; border-radius: 12px; }
+#course-nav li.sys_apply { background-color: #0065bd; }
+#course-nav li.sys_selected { background-color: #08e8de; }
+#course-nav li.sys_selected a { color: #000; font-weight: bold; }
+#course-nav li.sys_selected a:hover, #course-nav li.sys_selected a:focus, #course-nav li.sys_selected a:active { color: #fff; }
+#course-nav ul li a:focus { outline: 2px solid #08e8de; outline-offset: -2px; }
+#course-nav ul li.sys_selected a:focus { outline: 2px solid #323e48; outline-offset: -2px; }
+
+@media screen and (max-width:980px) {
+	#course-nav-menu { height:0; display: none; }
+	#course-nav {display:none;}
+	body.sys_top-header-fixed #course-nav {display:block;}
+	#course-nav .sys_span12 {padding:0;}
+	#course-nav ul, #course-nav ul li {width:100%; margin:0;}
+	#course-nav ul  {overflow:hidden;}
+	#course-nav ul li a, #course-nav ul li a:link, #course-nav ul li a:visited, #course-nav ul li a:hover {padding:20px 0 0 60px;}
+	#course-nav ul li a br {display:none;}
+	#course-nav ul li.sys_selected {position:absolute;}
+	#course-nav ul li.sys_selected:before, #course-nav ul li.sys_selected:after { color: #ccc; font-size:1.2em; }
+	#course-nav ul li.sys_selected:before { padding:19px 10px 0 30px; float: left;}
+	#course-nav ul li.sys_selected:after { float: right; padding-right: 20px; margin-top: -32px; cursor:pointer;}
+	#course-nav li.sys_apply {margin-left:0;}
+	#course-nav li.sys_apply a:after {font-size: 0.9em; float: right; padding: 1px 30px 0 0;}
+}
+
+@media screen and (min-width:980px) {
+	#course-nav {display:block;}
+}
+
+/* styles for when each top element is docked (course page-specific) - REVISIT THIS WHEN COURSE PAGE IS DONE - SOME COULD BE DELETED */
+
+body.sys_top-nav-fixed #top-nav { background-color: #fff; border-bottom: 1px solid #c33140;  } 
+body.sys_top-nav-fixed #page-heading-bacchus {  }
+
+body.sys_top-header-fixed #page-heading-bacchus { background-color: #fff; padding-top: 0; position: fixed; top: 55px; left: 50%;  width: 100%; margin-left: -50%; z-index: 19; }
+body.sys_top-header-fixed #course-nav { padding-top: 308px; }
+
+body.sys_course-nav-fixed #course-nav { position: fixed; top: 88px; left: 50%; margin-left: -50%; width: 100%; padding-top: 0; height: 70px; z-index: 19; } 
+body.sys_course-nav-fixed #course-nav li.sys_selected, body.sys_course-nav-fixed #course-nav li.sys_apply { background-color: #08e8de; /*border-bottom: 1px solid #ccc;*/}
+body.sys_course-nav-fixed #course-nav li.sys_selected a, body.sys_course-nav-fixed #course-nav li.sys_apply a { color: #000;}
+body.sys_course-nav-fixed #course-nav ul { height: 70px; }
+body.sys_course-nav-fixed #course-nav li a { padding: 12px; height: 60px; }
+body.sys_course-nav-fixed #course-nav li.sys_selected a:hover, body.sys_course-nav-fixed #course-nav li.sys_selected a:focus, body.sys_course-nav-fixed #course-nav li.sys_selected a:active { color: #fff; }
+body.sys_course-nav-fixed #page-heading-bacchus { height: 54px; }
+body.sys_course-nav-fixed #page-heading-bacchus h1 { line-height: 44px; padding: 4px 24px 4px 10px; font-size: 1.7em; }
+body.sys_course-nav-fixed #page-heading-bacchus h1 span { display: inline; color: #000; font-size: 1em; }
+body.sys_mobile-apply-now {display:none;}
+
+@media screen and (max-width:1100px) {
+body.sys_top-header-fixed #page-heading-bacchus { top: 41px; }
+}
+
+@media screen and (max-width:980px) {
+	body.sys_course-nav-fixed #course-nav li.sys_apply { background-color:#ba2121;}
+	body.sys_course-nav-fixed #course-nav li.sys_apply a {color:#fff; float:left; width:90%;}
+}
+
+@media screen and (max-width:640px) {
+	body.sys_course-nav-fixed #course-nav {display:none;}
+	body.sys_course-nav-fixed .sys_mobile-apply-now {background-color:#fff; display:block; position:fixed; width:100%; padding:5px 10px; top: 71px; border: 1px solid #ccc;}
+	body.sys_course-nav-fixed .sys_mobile-apply-now a {padding-left:10px; float:left; width:90%;}
+	body.sys_course-nav-fixed .sys_mobile-apply-now a:after {float: right; font-size: 0.9em; }	
+	#unistats iframe { float: none; margin: auto; display: block; }
+}
+
+/* end of docked styles for course pages */
+
+/* design refresh 2018 docking fixes pending script change - WILL NEED TO CHANGE */
+body.sys_top-header-fixed #banner-img { height: 259px; }
+
+/* special width adjustments to try to bring the header and footer into Bootstrap but with their own widths */
+#course-nav .sys_container,  #course-nav .sys_span12 { width: 990px; max-width: 100%; }
+.sys_lt-ie9 #course-nav .sys_container, .sys_lt-ie9 #course-nav .sys_span12 { width: 990px; max-width: 990px; }
+
+
+#Entry-requirements-tab p { border-bottom: 1px solid #6D6E71; padding-bottom: 0.4em; margin-top: 0.6em; }
+
+@media screen and (max-width:767px) {
+
+.sys_jqplotDonut { width: 100% !important; /*height: auto!important;*/ }
+
+}
+
+table.sys_jqplot-table-legend { width: auto; border: none; }
+#grad-destinations2 { background: transparent !important; }
+
+#related h2 span.sys_number { float: right; font-size: 0.7em; color: #6D6E71; }
+.sys_lt-ie8 #related h2 span.sys_number { float: none; display: block; }
+@media screen and (max-width:640px) {
+#page-body #related h2 span.sys_number { float: none; display: block; margin-top: -5px;}
+}
+/* styling for apply online box */
+.sys_apply-online h3 a {color: #000;}
+.sys_apply-online p {border:none;}
+.sys_apply-online p a, .sys_apply-online p a:visited {background: url('../img/go-header-link-bg-14px.gif') no-repeat right 4px; display: block; }
+.sys_apply-online a.sys_course-in-brief-apply { border-bottom: none; }
+.sys_apply-online a.sys_course-in-brief-apply:hover { border-bottom: none; }
+.sys_highlight-box a.sys_howtoapply { background: url('../img/go-header-link-bg-14px.gif') no-repeat right 4px; display:block; text-decoration: none; font-size: 1.1em; color: #000; font-family: 'Figtree', Arial, sans-serif; font-weight: bold; border: none; }
+.sys_highlight-box a.sys_howtoapply:hover { text-decoration: underline; }
+#page-body .sys_highlight-box .opening-hours-list { padding-top: 30px; }
+.sys_highlight-box-clearing-2022 a.sys_howtoapply { background-color: #ff005c; line-height: 1.4em; border-radius: 30px; padding: 12px 24px; box-sizing: border-box; display: inline-block; text-decoration: none; font-size: 1.1em; color: #fff; border: none; }
+.sys_highlight-box-clearing-2022 a.sys_howtoapply:hover { text-decoration: underline; }
+.sys_highlight-box-clearing-2022 .sys_tel-line a { color: #ff005c; font-weight: bold; }
+@media screen and (max-width:768px) {
+	.sys_highlight-box-clearing-2022 .sys_tel-line a { display: block; width: max-content; margin: auto; }
+}
+.sys_apply-online h4 { margin-bottom: 2px; }
+.sys_apply-online p.sys_apply-button { text-align: right; padding: 0; margin-top: -4px; margin-bottom: 12px; }
+.sys_apply-online p.sys_apply-button a { background: #da3949; display: inline-block; padding: 10px 16px; color: #fff; width: 190px; text-align: center; }
+@media screen and (max-width:980px) { 
+	.sys_apply-online p.sys_apply-button { margin-top: 8px; }
+}
+@media screen and (max-width:480px) { 
+	.sys_apply-online p.sys_apply-button { text-align: center; }
+}
+
+html.js #countrylistdynamic tr, #countrylistdynamic caption { display: none; }
+#countrylistdynamic a:focus { outline: 1px dashed #000; outline-offset: 2px; text-decoration: none; border-bottom: none; }
+
+/* fix for positioning of these images in IE */
+#location .sys_span6 > img { clear: both; display: block; }
+
+/* fix text colour for CTA with image when used on a course page */
+aside[class*="sys_cta"] h2 a, aside[class*="sys_cta"] h3 a, aside[class*="sys_cta"] h4 a, aside[class*="sys_cta"] h5 a, aside[class*="sys_cta"] h6 a { color: #5f5f5f; }
+
+/* adjust CTA padding to match top panel */
+#contact .sys_cta-bar-primary { margin-bottom: 16px; }
+
+/* course page data capture form */
+.sys_course-data-capture.sys_highlight-box { margin-top: 0; position: relative; background-color: #eee; border: none; padding: 18px; }
+#page-body #contact .sys_course-data-capture .sys_sectionbreak-header, .sys_course-data-capture.sys_highlight-box h3 { color: #333; font-size: 1.6em; line-height: 1.2em; text-transform: none; font-family: 'Figtree', Arial, sans-serif; font-weight: bold; display: block; margin-top: 0; background-color: transparent; }
+.sys_course-data-capture.sys_highlight-box p { color: #333; margin-bottom: 0; }
+.sys_course-data-capture .sys_sectionbreak { padding-top: 0; }
+#contact .sys_course-data-capture .sys_cms-form-item { padding: 0; }
+#contact .sys_course-data-capture .sys_cms-form-control ul.sys_cms-form-body li label, #contact .sys_course-data-capture .sys_cms-form-control ul.sys_cms-form-body li .sys_legend { color: #333; font-family: 'Figtree', Arial, sans-serif; }
+.sys_course-data-capture ul.sys_cms-form-body { margin-bottom: 0; }
+.sys_course-data-capture .sys_required { color: #333; }
+.sys_course-data-capture .sys_cms-form-body .sys_buttons{ display: inline; width: auto; }
+.sys_course-data-capture .sys_cms-form-body .sys_buttons { bottom: 18px; margin-bottom: 0; position: absolute; right: 18px; }
+#contact .sys_course-data-capture ul li.sys_buttons button { background-color: #323e48; border: medium none; color: #fff; font-weight: normal; line-height: 28px; padding-left: 12px; padding-right: 12px; }
+.sys_course-data-capture .sys_cms-form-body .sys_email input { width: 75%; }
+.sys_course-data-capture .sys_email .sys_fieldcontent { float: none; }
+#page-body .sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item div.sys_sectionbreak-text { color: #333; }
+#page-body #contact .sys_course-data-capture .sys_sectionbreak-header { margin: 0; }
+.sys_course-data-capture .sys_prepopulate-subject-area { display: none; }
+.sys_course-data-capture .sys_prepopulate-course-title-hidden { display: none; }
+.sys_course-data-capture .sys_privacy-consent { display: inline; }
+.sys_course-data-capture .sys_privacy-consent .sys_fieldcontent  { max-width: 80%; float: none; }
+.sys_course-data-capture .sys_privacy-consent .sys_fieldcontent span { white-space: normal; } 
+
+/* new pullquote styles for use on course pages */
+/* large quote stripe across page with quote marks image */
+#page-body aside.sys_quote { padding-top: 0; }
+#page-body aside.sys_quote blockquote { background: url('../img/icon-quote-aqua.png') no-repeat center 30px; padding: 110px 0 40px 0; color: #037aa9; font-size: 1.5em; line-height: 1.1em; border: none; margin: 0; text-align: center; }
+#page-body aside.sys_quote p { margin-bottom: 0; font-size: 1em; line-height: 1.1em; }
+/* large quote stripe across page, same as above, but with quote attribution */
+#page-body aside.sys_with-attr blockquote { padding-bottom: 16px; }
+#page-body aside p.sys_pullquote-attr { color: #1c809a; font-size: 1.05em; padding-bottom: 0; text-align: center; }
+#page-body aside { padding: 30px 0 30px 0; }
+.sys_pull-stat .sys_span12 { background: #08e8de; color: #000; border-radius: 20px; }
+.sys_pull-stat .sys_stat-content { padding: 20px 35px 20px 35px; }
+#page-body aside.sys_pull-stat p { color: #000; font-size: 1.5em; line-height: 1.1em; border: none; margin: 0 0 15px 0; }
+#page-body aside.sys_pull-stat .sys_stat-content > p:last-child, #page-body aside.sys_pull-stat ul li:last-child p,  #page-body aside.sys_pull-stat ul { margin-bottom: 0; }
+#page-body aside.sys_pull-stat ul + p { margin-top: 16px; }
+.sys_pull-stat .sys_stat-content a { color: #000; border-bottom: 1px dashed #000; }
+.sys_pull-stat .sys_stat-content a:hover, .sys_pull-stat .sys_stat-content:active { color: #000; border-bottom: 1px solid #000; text-decoration: none; }
+.sys_pull-stat .sys_stat-content a:focus { outline: 1px dashed #000; text-decoration: none; outline-offset: 0; }
+.sys_pull-stat .sys_stat-content li { list-style-image: url("../img/icon-arrow-10px.png"); }
+.sys_pull-stat .sys_stat-content strong { font-family: 'Figtree', Arial, sans-serif; font-weight: bold; }
+
+@media screen and (max-width:767px) {
+	#page-body aside.sys_pull-stat { padding: 0 10px 30px 10px; }
+	#page-body aside.sys_pull-stat .sys_stat-content { padding: 24px 14px; }
+	#page-body aside.sys_pull-stat .sys_stat-content ul { margin-left: 16px; }
+}
+
+/* section-specific colour for page rating form */
+.sys_rating-form, .sys_rating-form-title { background-color: #0065bd; }
+
+/* clearing boxes */
+.sys_clearing-box { margin-bottom: 16px; border-color: #eb6057; }
+.sys_clearing-box p { padding-top: 14px; border: none; margin-bottom: 0; }
+.sys_clearing-box p.sys_clearing-tel { padding-top: 20px; }
+.sys_clearing-box .sys_clearing-tel a { text-decoration: none; font-size: 2.2em; padding-top: 18px; color: #000; line-height: inherit; }
+.sys_clearing-box .sys_nounderline:last-child { margin-bottom: 2px; }
+.sys_clearing-box .sys_howtoapply { border-bottom: 1px solid #fff; padding-bottom: 5px; }
+
+/* blog feature boxes on course pages */
+.sys_blog-feature img { width: 100%; height: auto; border-radius: 20px 4px 4px 4px; }
+#page-body section .sys_blog-feature h3 { color: #000; margin: 16px 0 0 0; font-size: 1.2em; padding: 14px 0 0 0; border-bottom: none; border-top: 7px solid #323e48; line-height: 1.2em; position: relative; }
+#page-body section .sys_blog-feature h3::before { content: 'Blog'; text-transform: uppercase; position: absolute; top: -13px; background-color: #fff; padding-right: 6px; font-family: 'Gabarito', Arial, sans-serif; }
+#page-body section .sys_blog-feature p { color: #000; font-size: 1.1em; line-height: 1.35em; padding: 4px 0 12px 0; border-bottom: 4px solid #323e48; margin-bottom: 24px; }
+.sys_blog-feature a:hover, .sys_blog-feature a:active { text-decoration: none; }
+#page-body section a.sys_blog-feature-link:focus { text-decoration: none; outline: 1px dashed #000; outline-offset: 2px; }
+section .sys_blog-feature a.sys_blog-feature-link { display: block; border-bottom: none; }
+section.sys_blog-feature-panel p a { display: inline-block; color: #da3949; background-color: #fff; padding: 8px 18px 8px 18px; border-radius: 24px; border: 1px solid #da3949; font-size: 1.2rem; text-decoration: none; margin-top: 24px; }
+section.sys_blog-feature-panel p a:hover, section.sys_blog-feature-panel p a:active { background-color: #da3949; color: #fff; outline: none; }
+section.sys_blog-feature-panel p a::after {content: "\003E"; padding-left: 12px; }
+@media screen and (max-width:980px) { 
+	.sys_blog-feature { margin-left: 10px; } 
+}
+@media screen and (max-width:767px) { 
+	.sys_blog-feature-3, .sys_blog-feature-2 { display: none; } 
+	#page-body section .sys_blog-feature { margin-left: 0; padding: 0; } 
+	#page-body section .sys_blog-feature img { display: none; }
+	section.sys_blog-feature-panel p a { margin-top: 8px; margin-bottom: 24px; }
+}
+
+/* course delivery statements */
+.sys_delivery-statement {
+	column-count: 2;
+	column-gap: 24px;
+}
+.sys_delivery-statement p {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+@media screen and (max-width:767px) { 
+	.sys_delivery-statement {
+		column-count: 1;
+	}
+}
+/* course additional costs statements */
+.sys_additional-costs {
+	column-count: 2;
+	column-gap: 24px;
+}
+.sys_additional-costs p, .sys_additional-costs li {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+@media screen and (max-width:767px) { 
+	.sys_additional-costs {
+		column-count: 1;
+	}
+}
+/* for new style open day CTA box, based on Clearing box */
+.sys_highlight-box-clearing-2022.sys_od-cta {
+	margin-bottom: 16px;
+}
+@media screen and (max-width:768px) { 
+	.sys_highlight-box-clearing-2022.sys_od-cta {
+		margin-bottom: 36px;
+		padding: 58px 64px;
+	}
+}
+section .sys_od-cta p a {
+	display: inline-block;
+	color: #fff;
+	background-color: #ea335f;
+	padding: 10px 18px;
+	border-radius: 28px;
+	font-weight: bold;
+	border: 1px solid #ea335f;
+}
+section .sys_od-cta p a:hover, section .sys_od-cta p a:focus {
+	color: #ea335f;
+	background-color: #fff;
+	border: 1px solid #ea335f;
+}
+/* TEF 2023 Silver logo on UG pages */
+#banner-img .sys_tef-2023 {
+	position: absolute;
+	left: 0;
+	top: 28%;
+	z-index: 10;
+}
+#banner-img .sys_tef-2023 img {
+	width: 150px;
+	height: 205px;
+}
+@media screen and (max-width:1320px) { 
+	#banner-img .sys_tef-2023 {
+		top: 35%;
+	}
+	#banner-img .sys_tef-2023 img {
+    width: 100px !important;
+    height: auto;
+    left: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:1180px) { 
+	#banner-img .sys_tef-2023 {
+		top: 28%;
+	}
+}
+@media screen and (max-width:1100px) { 
+	#banner-img .sys_tef-2023 {
+		top: 23%;
+	}
+}
+@media screen and (max-width:1100px) { 
+	#banner-img .sys_tef-2023 {
+		top: 20px;
+	}
+}
+@media screen and (max-width:980px) { 
+	#banner-img .sys_tef-2023 {
+		top: 25px;
+	}
+  #banner-img .sys_tef-2023 img {
+    width: 70px !important;
+    height: auto;
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+#relatedCarousel { height: 23rem; }
+.sys_wrapper .carousel-wrapper { margin-bottom: 4px; }
+#relatedCarousel img { border-radius: 4px; border-bottom: none; padding-bottom: 0; }
+#relatedCarousel h4, #relatedCarousel h3 { margin-top: 8px; }
+#relatedCarousel p a { display: inline-block; color: #da3949; background-color: #fff; padding: 8px 18px 8px 18px; border-radius: 24px; border: 1px solid #da3949; font-size: 1rem; text-decoration: none; margin-top: 12px; }
+#relatedCarousel p a:hover, #relatedCarousel p a:active { background-color: #da3949; color: #fff; outline: none; }
+#relatedCarousel p a::after {content: "\003E"; padding-left: 12px; } 
+
+/* link to subject area in related courses panel */
+.sys_subj-link a, .sys_subj-link a:visited { display: inline-block; color: #fff; background-color: #da3949; padding: 8px 18px 8px 18px; border-radius: 24px; border: 1px solid #da3949; font-size: 1.2rem; text-decoration: none; margin-top: 12px; }
+.sys_subj-link a:hover, .sys_subj-link a:active { background-color: #fff; color: #da3949; outline: none; border: 1px solid #da3949; }
+.sys_subj-link a::after {content: "\003E"; padding-left: 12px; } 
+
+/* next steps CTA box with Bacchus updates */
+
+.sys_next-steps-container { background-color: #fff; border: 1px solid #323e48; border-radius: 12px; display: flex; flex-direction: column; flex-wrap: nowrap; padding: 16px; }
+header .sys_next-steps-container h2 { font-size: 1.5rem; margin: 0; }
+header .sys_next-steps-container h3, header .sys_next-steps-container h4, header .sys_next-steps-container .sys_toggle-line p, header .sys_next-steps-container p, header .sys_next-steps-container table, header .sys_next-steps-container td, header .sys_next-steps-container th { color: #333; }
+header .sys_next-steps-container h2, header .sys_next-steps-container h3 { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
+.sys_next-steps-container p a:link, .sys_next-steps-container p a:visited, .sys_next-steps-container p a:hover, .sys_next-steps-container p a:active { color: #fff; border-bottom: 1px dashed #fff; }
+.sys_next-steps-container p a:focus { outline: 1px dashed #fff; }
+header .sys_next-steps-container label { font-size: 1.19rem; margin-bottom: 16px; margin-left: 16px; }
+.sys_toggle-line { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; }
+.opening-hours-content-open, .opening-hours-content-closed { margin-top: 0; }
+header .sys_next-steps-container .opening-hours-content-open a, header .sys_next-steps-container .opening-hours-content-closed a { color: #fff; border-bottom: 1px dashed #fff; }
+header .sys_next-steps-container .sys_cta-bar-primary a, header .sys_next-steps-container .sys_cta-bar-primary a { border-bottom: none; font-size: 1rem; padding: 16px 70px 16px 20px; }
+header .sys_next-steps-container .opening-hours-content-open .sys_cta-bar-primary, header .sys_next-steps-container .opening-hours-content-closed .sys_cta-bar-primary { margin-bottom: 16px; }
+header .sys_next-steps-container .sys_cta-bar-secondary, header .sys_next-steps-container .sys_cta-bar-primary { margin: 0; }
+.sys_next-steps-container .sys_entry-queries { margin-top: 20px; margin-bottom: 24px; }
+.sys_next-steps-container .sys_entry-queries a:link, .sys_next-steps-container .sys_entry-queries a:visited { color: #fff; border-bottom: 1px dashed #fff; }
+.sys_next-steps-container .sys_entry-queries a:hover, .sys_next-steps-container .sys_entry-queries a:active { color: #fff; border-bottom: 1px solid #fff; }
+.sys_next-steps-container .sys_entry-queries a:focus { outline: 1px solid #fff; }
+header .sys_next-steps-container .opening-hours-content-open a:focus, header .sys_next-steps-container .opening-hours-content-closed a:focus { text-decoration: none; outline: 1px dashed #fff; outline-offset: 0; }
+header .sys_next-steps-container .opening-hours-list .ui-accordion-header:focus { outline: 1px dashed #fff; outline-offset: 2px; }
+
+/* accessible button toggle styles based on work by Kitty Giraudel https://kittygiraudel.com */
+
+.Toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  gap: 1ch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button.Toggle {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font: inherit;
+  color: #333;
+}
+
+.Toggle__display {
+  --offset: 0.25em;
+  --diameter: 2.5em;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: content-box;
+  width: calc(var(--diameter) * 3 + var(--offset) * 2);
+  height: calc(var(--diameter) + var(--offset) * 0.3);
+  position: relative;
+  border-radius: 16px;
+  background-color: #323e48;
+  transition: 250ms;
+  color: #fff;
+}
+
+.Toggle__display::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  box-sizing: border-box;
+  width: calc(var(--diameter) * 1.6);
+  height: var(--diameter);
+  border: 0.1em solid rgb(0 0 0 / 0.2);
+  border-radius: 16px;
+  background-color: #da3949;
+  transform: translate(0, -50%);
+  will-change: transform;
+  transition: inherit;
+  z-index: 0;
+}
+
+.Toggle__display span {
+  padding: 0 8px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+
+.Toggle:focus .Toggle__display,
+.Toggle__input:focus + .Toggle__display {
+  outline: 2px solid #fff;
+  outline: 1px auto -webkit-focus-ring-color;
+  outline-offset: 2px;
+}
+
+.Toggle:focus,
+.Toggle:focus:not(:focus-visible) .Toggle__display,
+.Toggle__input:focus:not(:focus-visible) + .Toggle__display {
+  outline: 0;
+}
+
+.Toggle[aria-pressed="true"] .Toggle__display,
+.Toggle__input:checked + .Toggle__display {
+  background-color: transparent;
+}
+
+.Toggle[aria-pressed="true"] .Toggle__display::before,
+.Toggle__input:checked + .Toggle__display::before {
+  transform: translate(100%, -50%);
+}
+
+/* end of toggle styles */
+
+/* bacchus banner area styles */
+#banner-area { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 24px; }
+#banner-content { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 24px; }
+
+@media screen and (min-width:767px) { 
+	header.sys_bacchus { max-width: 100%; width: 724px; margin: auto; }
+	#banner-content { flex-direction: row; justify-content: center; align-items: center; }
+}
+@media screen and (min-width:980px) { 
+	header.sys_bacchus { max-width: 100%; width: 990px; margin: auto; }
+	header.sys_bacchus #top-nav nav { width: 655px; }
+	#banner-area { flex-direction: row; margin-bottom: 24px; }
+	#banner-content { flex-direction: column; position: relative; left: -60px; justify-content: flex-start; padding-top: 24px; align-items: stretch; }
+	#banner-img-bacchus { flex: 0 1 700px; }
+}
+@media screen and (min-width:1100px) { 
+	header.sys_bacchus { max-width: 100%; width: 1100px; margin: auto; }
+	header.sys_bacchus #top-nav nav { width: 700px; }
+}
+
+.key-stats-bacchus {
+	padding: 32px;
+	color: #000;
+	background-color: #6ecff6;
+	border-radius: 24px;
+}
+.key-stats-bacchus h3 { color: #000; }

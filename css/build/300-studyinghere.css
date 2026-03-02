@@ -1,0 +1,516 @@
+/* studying here area-specific styles */
+
+#banner-and-navs { background-color: #fff; }
+header h1, #page-heading span { background-color: #fff; margin-bottom: 6px; }
+#page-heading a { color: #000; }
+section h1, section h2 { color: #000; }
+section h3, section h4, section h5, section h6 { color: #000; }
+
+.sys_signposts h2, .sys_signposts h3, .sys_signposts h4, .sys_signposts h5, .sys_signposts h6, .sys_signposts h2 a, .sys_signposts h3 a, .sys_signposts h4 a, .sys_signposts h5 a, .sys_signposts h6  a, aside[class*="sys_cta"] h2 a, aside[class*="sys_cta"] h3 a, aside[class*="sys_cta"] h4 a, aside[class*="sys_cta"] h5 a, aside[class*="sys_cta"] h6 a, .sys_signposts-linksonly li a { /*color: #cd2fb0;*/ color: #333; }
+
+#section-nav { border-bottom: 1px solid #cd2fb0; }
+#section-nav ul#section-menu li a { border-right: 1px solid #c6c6c7; }
+#section-nav ul#section-menu li a:hover { color: #cd2fb0; }
+#section-nav ul#section-menu li.sys_selected { background-color: #cd2fb0; }
+
+/* styles for search results page */
+section .sys_searchagain { padding: 4px 0; }
+section .sys_searchagain h2 { color: #fff; border-bottom: 1px solid #fff; border-top: none; margin-bottom: 4px; }
+section .sys_searchagain input[type="text"] { border-radius: 0; width: 722px; float: left; }
+section .sys_searchagain input[type="image"] { margin: 1px 0; float: right;  } 
+
+section .sys_courseresults .sys_tabHeading { display: none; }
+section .sys_courseresults ul { padding-left: 0; list-style-type: none; list-style-image: none; }
+section .sys_courseresults article { overflow: auto; padding-bottom: 16px; padding-right: 20px; margin-bottom: 0; }
+section .sys_courseresults h3, section .sys_courseresults h2 { font-size: 1.5em; color: #000; border-top: none; border-bottom: none; padding-top: 16px; margin-bottom: 8px; clear: both; }
+section .sys_courseresults li:first-child h3, section .sys_courseresults li:first-child h2 { padding-top: 0; }
+section .sys_courseresults li a { background: url("/_design/img/go-header-link-bg-18px.gif") no-repeat right center; display: block; border-bottom: 1px solid #000; }
+section .sys_courseresults li a:hover { text-decoration: none; }
+section .sys_courseresults h3 a { display: block; color: #000; text-decoration: none; background: url("/_design/img/go-header-link-bg.gif") no-repeat right 2px; padding-right: 20px; }
+section .sys_coursedefs { float: left; margin-right: 3%; width: 32%; }
+section .sys_resultduration { width: 30%; }  
+section .sys_resultucas { width: 20%; margin-right: 0; }
+section .sys_resultclearing { width: 22%; margin-right: 0; float: right; }
+section .sys_resultclearing h4, section .sys_resultclearing h3 { color: #000; }
+#page-body section .sys_courseresults h4, #page-body section .sys_courseresults h3 { display: inline; float: none; margin-right: 8px; font-size: 0.95em; }
+section .sys_courseresults ul.sys_definitions { float: none; width: 100%; margin-right: 3% }
+section .sys_courseresults ul.sys_definitions li { font-size: 0.95em; line-height: 20px; }
+section .sys_courseresults ul.sys_definitions li.sys_locbrighton { padding-left: 24px; background: url("/_design/img/location-brighton.png") no-repeat left 3px; min-height: 21px; }
+section .sys_courseresults ul.sys_definitions li.sys_loceastbourne { padding-left: 24px; background: url("/_design/img/location-eastbourne.png") no-repeat left 3px; min-height: 21px; }
+section .sys_courseresults ul.sys_definitions li.sys_lochastings { padding-left: 24px; background: url("/_design/img/location-hastings.png") no-repeat left 3px; min-height: 21px; }
+section .sys_courseresults ul.sys_definitions li.sys_locbsms { padding-left: 24px; background: url("/_design/img/location-bsms.png") no-repeat left 3px; min-height: 21px; }
+section .sys_courseresults ul.sys_definitions li.sys_locpartner { padding-left: 24px; background: url("/_design/img/location-partner.png") no-repeat left 3px; min-height: 21px; }
+section .sys_courseresults ul.sys_resultucas { width: 100%; }
+section .sys_courseresults ul.sys_resultduration { width: 100%; margin-right: 10%; }
+section .sys_courseresults dt { float: left; margin-bottom: 40px; padding-right: 8px; }
+#page-body .sys_courseresults h2, #page-body .sys_courseresults h3, #page-body .sys_courseresults h4, #page-body .sys_courseresults h5 { margin-top: 0; }
+#page-body section .sys_span12 p.sys_course-strapline { margin-top: 6px; margin-bottom: 6px; }
+
+@media screen and (max-width:980px) {
+section .sys_dark-grey-section.sys_searchagain .sys_span12, section .sys_section-content-tab .sys_span12:first-child { width: 95%; }
+section .sys_searchagain input[type="text"] { max-width: 85%; }
+section .sys_searchagain input[type="image"] { float: none; margin-left: 8px;  } 
+section .sys_courseresults .sys_span12:first-child { width: 708px; padding-right: 16px; }
+}
+
+@media screen and (max-width:767px) {
+#page-body .sys_section-content .sys_span6 .sys_tabHeading, #page-body .sys_section-content .sys_span12 .sys_tabHeading, #page-body .sys_section-content .sys_span8 .sys_tabHeading { color: #000; }
+section .sys_courseresults .sys_section-tabs { display: block; }
+#page-body section .sys_courseresults .sys_tabHeading { display: block; color: #000; font-size: 1.5em; margin-bottom: 20px; }
+section .sys_courseresults .sys_span12 { padding-top: 24px; }
+section .sys_courseresults .sys_span12:first-child { width: auto; }
+section .sys_courseresults .sys_section-content-tab:first-child .sys_span12 { padding-top: 0; }
+#page-body section .sys_courseresults .sys_span12 .sys_tabHeading { font-size: 1.4em; }
+}
+
+@media screen and (max-width:640px) {
+section .sys_searchagain input[type="text"] { max-width: 75%; }
+}
+
+@media screen and (max-width:490px) {
+section .sys_courseresults h3 { font-size: 1.3em; }
+section .sys_courseresults .sys_resultduration, #page-body section .sys_courseresults .sys_durationhead { display: none; }
+section .sys_courseresults h4 { float: none; clear: left; }
+section .sys_courseresults ul.sys_definitions { margin-bottom: 8px; width: 60%; }
+section .sys_coursedefs { width: 42%; margin-right: 5%; padding-bottom: 8px; }
+section .sys_resultclearing { float: none; width: auto !important; clear: both; }
+section .sys_courseresults article { padding-bottom: 8px; }
+}
+
+@media screen and (max-width:380px) {
+section .sys_courseresults ul.sys_definitions { width: 70%; }
+}
+
+/* end of styles for search results page */
+
+#active-breadcrumbs { border-bottom: 1px solid #cd2fb0; }
+#active-breadcrumbs ul.sys_topbread li, #active-breadcrumbs ul.sys_topbread li.sys_topselected, #active-breadcrumbs ul.sys_topbread li.sys_last, #active-breadcrumbs ul.sys_topbread li.sys_last.sys_topselected { background-color: #cd2fb0;}
+#active-breadcrumbs ul.sys_subnav li.sys_selected a { color: #cd2fb0; }
+
+
+/* styles for when each top element is docked (studying here area-specific) */
+
+body.sys_top-header-fixed #page-heading { background-color: #fff; }
+
+/* end of docked styles for studying here pages */
+
+#page-body aside.sys_quote { background-color: #fff; }
+#page-body aside.sys_quote blockquote { background-image: url('/_design/img/icon-quote-pink-studying.png'); color: #c92ead; }
+#page-body aside p.sys_pullquote-attr { color: #c92ead; }
+
+.sys_section-highlight-box { margin-bottom: 8px; }
+.sys_section-highlight-box a[href^="tel"] { text-decoration: none; font-size: 1.8em; }
+#page-body section .sys_section-highlight-box h2, #page-body section .sys_section-highlight-box h3, #page-body section .sys_section-highlight-box h4 { border-bottom: 1px solid #fff; }
+#page-body .sys_cms-form-control ul.sys_cms-form-body li button { background-color: #cd2fb0; }
+
+/* section-specific colour for mini tabs */
+ul.sys_section-tabs li a { color: #ad2695; }
+ul.sys_section-tabs li.sys_selected, .sys_grey ul.sys_section-tabs li.sys_selected { background-color: #cd2fb0; }
+ul.sys_section-tabs li.sys_selected a:focus { outline-color: #fff; outline-offset: -3px; }
+.sys_next-tab a, .sys_next-tab a:link, .sys_next-tab a:visited, .sys_next-tab a:hover, .sys_next-tab a:active { background-color: #cd2fb0; }
+
+/* section-specific colour for page rating form */
+.sys_rating-form, .sys_rating-form-title { background-color: #cd2fb0; }
+
+/* content carousel */
+#carousel-pager { float: right; } 
+#carousel-pager img { margin-left: 2px; cursor: pointer; } 
+#caseStudiesCarousel { background-color: #e7e7e7; } 
+#caseStudiesCarousel p a:link, #caseStudiesCarousel p a:visited, #caseStudiesCarousel ul a:link, #caseStudiesCarousel ul a:visited { color: #c03240; }
+#caseStudiesCarousel p a:hover, #caseStudiesCarousel p a:active, #caseStudiesCarousel ul a:hover, #caseStudiesCarousel ul a:active { color: #006da4; }
+.sys_grey #caseStudiesCarousel { background-color: #fff; }
+.sys_carousel-content { padding: 16px 16px 16px 0px; } 
+.sys_span6:first-child .sys_carousel-content { padding: 16px 0px 16px 16px; } 
+#carousel-pager a { display: none; }
+@media screen and (max-width:767px) {
+	.sys_carousel-content, .sys_span6:first-child .sys_carousel-content { padding-left: 0; padding-right: 0; } 
+	/* mobile pager */
+	#carousel-pager { float: none; margin: auto; text-transform: uppercase; font-size: 1.3em; width: 213px; background-color: #F6F5F5; }
+	#carousel-pager a { display: inline-block; line-height: 30px; height: 30px; color: #7F7F7F; background-color: #F6F5F5; margin-top: 0px; margin-right: 2px; margin-left: 2px; padding-left: 4px; vertical-align: bottom; }
+	#carousel-pager a:hover { text-decoration: none; }
+	#carousel-pager img { display: inline-block; }
+  	#caseStudiesCarouselWrapper { position: relative; padding-top: 30px; }
+	#carousel-pager-wrapper { position: absolute; top: 0; width: 100%; }
+}
+
+section blockquote { color: #ca2fae; background: url('/_design/img/icon-quote-pink-studying.png') no-repeat 6px top; padding: 80px 8px 8px 8px; }
+
+@media screen and (max-width:767px) {
+	section blockquote { background: url('/_design/img/icon-quote-pink-studying-small.png') no-repeat 6px top; padding: 70px 8px 8px 8px; }
+}
+
+/*=============================================*/
+/* styles moved from other section stylesheets */
+/*=============================================*/
+
+/* 300-business.css / 300-research.css */
+/*==================*/
+
+/* academic staff search styling - also in 300-research.css so have deleted duplicates */
+.sys_datarepeatercontrol > ul { list-style-type: none; }
+.sys_datarepeatercontrol > ul li { margin-bottom: 24px }
+.sys_datarepeatercontrol h3 { margin-bottom: 5px; }
+.sys_datarepeatercontrol h4 { display: none; }
+.sys_datarepeatercontrol ul.sys_definitions { list-style-type: none; margin-left: 0; }
+
+
+/* 300-choosebrighton.css */
+/*========================*/
+
+.sys_discstat-inner { background-color: #cd2fb0; }
+.subheadcoloured, #page-body section h2.subheadcoloured, #page-body section h3.subheadcoloured, #page-body section h4.subheadcoloured, #page-body section h5.subheadcoloured, #page-body section h6.subheadcoloured { color: #cd2fb0; }
+
+/* 300-clearing.css */
+/*==================*/
+
+.underquote { color: #333; }
+#page-body section blockquote p, #page-body section .sys_section-content blockquote p, #page-body section blockquote { color: #333; }
+
+section blockquote { color: #ca2fae; background: url('/_design/img/icon-quote-pink-studying.png') no-repeat 6px top; padding: 80px 8px 8px 8px; }
+
+@media screen and (max-width:767px) {
+	section blockquote { background: url('/_design/img/icon-quote-pink-studying-small.png') no-repeat 6px top; padding: 70px 8px 8px 8px; }
+}
+
+/* 300-livinghere.css */
+/* ===================*/
+
+/* styles for halls comparison page */
+#halls-filters { clear: both; overflow: auto; background-color: #323e48; color: #fff; padding: 10px 24px 18px 24px; margin-bottom: 16px; position: relative; border-radius: 8px; }
+section #halls-filters h3 { color: #fff; margin-bottom: 24px; margin-top: 16px; }
+.sys_halls-filters-col { float: none; }
+#halls-filters input, #halls-filters label { float: left; }
+#halls-filters input { margin-right: 10px; }
+#halls-filters input:focus-visible, #halls-filters select:focus-visible  { outline: 1px solid #fff; outline-offset: 2px; }
+#halls-filters label { margin-right: 15px; font-size: 1rem; }
+.sys_halls-filters-group { overflow: auto; clear: both; padding-bottom: 6px; }
+.sys_halls-filters-col-right .sys_halls-filters-group { max-width: 300px; }
+#page-body section .sys_halls-filters-group p { float: none; margin-right: 10px; margin-bottom: 6px; }
+.sys_halls-filters-contract label { margin-bottom: 2px; }
+.sys_halls-filters-contract input { clear: left; }
+.sys_halls-filters-contract p { float: left; margin-right: 10px;  width: 105px; }
+.sys_halls-filters-contract-right { float: left; }
+.sys_halls-filters-col-right p { width: 68px; padding-bottom: 20px; }
+.sys_halls-filters-col-right.sys_halls-sort { float: right; margin-right: 0; }
+.sys_halls-sort-wrapper { float: right; padding-top: 30px; padding-bottom: 33px; }
+#halls-comparison .sys_halls-image-carousel.slick-dotted .sys_slick-dots:has(:focus-visible) { outline: 1px solid #000; outline-offset: 2px; }
+.sys_halls-filter-container { display: flex; flex-direction: column; }
+.sys_halls-filter-container .sys_halls-filter-container-col { order: 2; }
+.sys_halls-filter-container .sys_highlight-box { margin-top: 0; box-sizing: border-box; order: 1; }
+
+.sys_halls-total { position: absolute; bottom: 0; right: 24px; font-weight: bold; }
+
+.sys_halls { background-color: #f2f2f2; padding: 20px; border-radius: 18px; box-sizing: border-box; }
+.sys_hall { margin-bottom: 24px; display: flex; flex-direction: column; background: #fff; padding: 22px 22px 32px 22px; border-radius: 18px; }
+.sys_nohalls { display: none; }
+.sys_hall li a { cursor: pointer; }
+.sys_hall .sys_hall-images img { width: 100%; border-radius: 12px; }
+.sys_hall .sys_hall-text h3 { margin-top: 24px; font-size: 1.5rem; }
+section .sys_hall .sys_360link, section .sys_hall .sys_maplink { cursor: pointer; display: block; margin-top: 16px; background: #da3949; color: #fff; padding: 16px 0px; text-align: center; border-radius: 12px; }
+section .sys_hall .sys_360link:hover, section .sys_hall .sys_maplink:hover { color: #fff; }
+section .sys_hall .sys_halls-image-carousel { padding-bottom: 0; }
+section .sys_hall .slick-dots.sys_halls-dots { bottom: 0; position: relative; margin-top: 14px; }
+
+@media screen and (min-width:767px) {
+	.sys_halls-filter-container { flex-direction: row; gap: 24px; align-items: stretch; }
+	.sys_halls-filter-container .sys_halls-filter-container-col { flex: 1 0 calc(50% - 12px); order: 1; }
+	.sys_halls-filter-container .sys_highlight-box { margin-top: 0; box-sizing: border-box; order: 2; }
+	.sys_hall { flex-direction: row; }
+	.sys_hall-images, .sys_hall-text { flex: 1 0 50%; box-sizing: border-box; max-width: 50%; }
+	.sys_hall-images { padding-right: 12px; }
+	.sys_hall-text { padding-left: 12px; padding-right: 12px; }
+	.sys_hall .sys_hall-text h3 { margin-top: 0; }
+	section .sys_hall .sys_halls-image-carousel { padding-bottom: 5px; }
+}
+
+@media screen and (max-width:980px) {
+	.sys_halls-filters-group p, .sys_halls-filters-contract p { float: none; }
+	.sys_halls-filters-col-right p { padding-bottom: 0; }
+	#campusmou { clear: left; }
+	section .sys_hall .slick-dotted.slick-slider { margin-bottom: 12px; }
+}
+@media screen and (max-width:680px) {
+    .sys_halls-filters-col { width: auto; }
+}
+@media screen and (max-width:550px) {
+	.sys_halls-filters-col-right.sys_halls-sort { float: none; clear: both; margin-bottom: 12px; }
+	.sys_halls-sort-wrapper { float: none; }
+}
+@media screen and (max-width:380px) {
+    #halls-filters { padding-bottom: 32px; }
+}
+
+/* faq module style adjustments */
+#page-body .sys_theme-simple .sys_faqs-control .sys_datarepeatercontrol .sys_subitem {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+#page-body .sys_theme-simple .sys_faqs-search-control {
+	display: none;
+}
+.large-section-heading, #page-body section .large-section-heading {
+	font-size: 1.9em;
+	border-top: none;
+	margin-top: 24px;
+}
+
+/* open day page styles */
+#subjectSelector { 
+	font-size: 1.5em; 
+	width: 300px; 
+	max-width: 100%;
+	line-height: 1.6em; 
+	height: 2.2em; 
+	border: 6px solid #da3949; 
+	border-radius: 0; 
+	box-sizing: border-box; 
+	background: #da3949; 
+	color: #fff; 
+} 
+.sys_subject-panel h2 { 
+	background:url('/_design/img/go-header-link-bg-18px-down.gif') no-repeat right 10px; 
+	cursor: pointer; 
+} 
+.sys_subject-panel h2.close { 
+	background:url('/_design/img/go-header-link-bg-18px-close.gif') no-repeat right 10px; 
+} 
+.sys_virtual-tours-container-border { 
+	margin-top: 24px; 
+	border: 1px solid #f13f20; 
+	padding-bottom: 24px; 
+	padding-top: 125px; 
+	background: url('/_design/img/look-around-360-slim.png') no-repeat top center; 
+} 
+.sys_virtual-tours-container-border h3, .sys_virtual-tours-container-border h4, .sys_virtual-tours-container-border p, .sys_virtual-tours-container-border ul { 
+	padding: 0 24px 0 24px; 
+} 
+.sys_virtual-tours-container-border h3 { 
+	padding-top: 24px; 
+} 
+.sys_virtual-info-desk-box { 
+	width: 717px; 
+	max-width: 100%; 
+	margin: auto; 
+	background: url('/_design/img/university-life-and-advice-2.png') no-repeat top center; 
+	padding: 175px 20px 20px 20px; 
+	box-sizing: border-box; 
+	border: 1px solid #f13f20; 
+	text-align: center; 
+	overflow: auto; 
+} 
+.sys_virtual-info-desk-box ul {
+    width: 50%;
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+    list-style-image: none;
+    list-style-type: none;
+    float: left;
+}
+#page-body section .sys_virtual-info-desk-box ul li {
+    font-size: 1.1rem;
+}
+@media screen and (max-width:480px) {
+	.sys_virtual-info-desk-box ul {
+		width: auto;
+		max-width: 100%;
+		margin-left: 16px;
+		float: none;
+	}
+}
+.live-chat-link, .live-chat-link:visited { 
+	padding: 10px 20px 10px 20px; 
+	text-align: center; 
+	margin: auto; 
+	text-transform: uppercase; 
+	border: 1px solid #f13f20; 
+	display: inline-block;
+}
+.live-chat-link:hover, .live-chat-link:active, .live-chat-link:focus {
+    background: #da3949;
+    color: #fff;
+	border: 1px solid #da3949; 
+	outline: none;
+}
+/* starting at uni styles */
+.hide-on-mobiles { display: initial; }
+@media screen and (max-width:767px) {
+	.hide-on-mobiles { display: none !important; }
+}
+@media screen and (max-width: 980px) {
+	.sys_span4 .sys_span4 {
+		padding: 0 20px 0 0;
+	}
+}
+#page-body section .sys_panel-blog-carousel {
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+}
+.sys_blogpost-image-title {
+	background: #f2f2f2;
+}
+.sys_blogpost-image {
+	max-width: 100%;
+	width: 100%;
+}
+.sys_blogpost-title {
+	padding: 20px 10px 20px 116px;
+	background: url('/_design/img/icon-quote-pink-studying.png') no-repeat 10px center;
+}
+#page-body section .sys_blogpost-title h3, #page-body section .sys_blogpost-title h4, #page-body section .sys_blogpost-title h5 {
+	padding: 0;
+	margin: 0;
+	color: #c92ead;
+	min-height: 58px;
+}
+.sys_blogpost-author {
+	padding-left: 116px;
+}
+.sys_blogpost-text { 
+	padding: 20px;
+}
+#page-body section .sys_blogpost-text p {
+	font-size: 1.13rem;
+	line-height: 1.68rem;
+}
+@media screen and (max-width:980px) {
+	.sys_blogpost-image-title {
+		background: #fff;
+	}
+	#page-body section .sys_blogpost-image img {
+		max-width: 100%;
+		width: 100%;
+	}
+	.sys_blogpost-title {
+    	min-height: 35px;
+	}
+}
+
+#page-body legend { border: none; }
+
+/* new halls pages 2025 */
+#page-body section .sys_highlight-box ul.sys_halls-included-list,  #page-body section .sys_halls-details-list {
+	margin-left: 0;
+}
+#page-body section .sys_highlight-box .sys_halls-included-list li {
+	list-style-image: none;
+	list-style-type: none;
+	background-repeat: no-repeat;
+	padding-left: 50px;
+	background-size: auto 30px;
+	background-position: center left;
+	margin-bottom: 16px;
+}
+#page-body section .sys_halls-details-list li { line-height: 30px; background-size: auto 80%; padding-left: 36px } 
+#page-body section .sys_highlight-box .sys_halls-included-list li.sys_contents, .sys_halls-details-list li.sys_contents {
+	background-image: url('/_design/img/halls/contents-icon-black.svg');
+	background-position-x: 3px;
+}
+#page-body section .sys_highlight-box .sys_halls-included-list li.sys_utility, .sys_halls-details-list li.sys_utility {
+	background-image: url('/_design/img/halls/bills-icon-black.svg');
+	background-size: 35px auto;
+}
+#page-body section .sys_highlight-box .sys_halls-included-list li.sys_cleaning, .sys_halls-details-list li.sys_cleaning {
+	background-image: url('/_design/img/halls/cleaning-icon-black.svg');
+}
+#page-body section .sys_highlight-box .sys_halls-included-list li.sys_security, .sys_halls-details-list li.sys_security {
+	background-image: url('/_design/img/halls/security-icon-black.svg');
+	background-position-x: 5px;
+}
+#page-body section .sys_highlight-box .sys_halls-included-list li.sys_wellbeing, .sys_halls-details-list li.sys_wellbeing {
+	background-image: url('/_design/img/halls/residential-wellbeing-icon-black.svg');
+}
+#page-body section .sys_highlight-box .sys_halls-included-list li.sys_social, .sys_halls-details-list li.sys_social {
+	background-image: url('/_design/img/halls/people-icon-black.svg');
+	background-position-x: 2px;
+}
+.sys_halls-key-info {
+	border: 1px solid #000;
+	border-radius: 8px;
+	padding: 23px;
+	max-width: 480px;
+	box-sizing: border-box;
+}
+#page-body section .sys_halls-key-info p {
+	background-repeat: no-repeat;
+	padding-left: 56px;
+	background-size: auto 30px;
+	background-position: left center;
+}
+#page-body section .sys_halls-key-info p:last-child {
+	margin-bottom: 0;
+}
+#page-body section .sys_halls-key-info p.sys_price, .sys_halls-details-list li.sys_price, .icons-list .icons-list-price {
+	background-image: url('/_design/img/halls/price-icon.svg');
+	background-position: 5px center;
+}
+#page-body section .sys_halls-key-info p.sys_contract, .sys_halls-details-list li.sys_contract, .icons-list .icons-list-contract {
+	background-image: url('/_design/img/halls/contract-icon.svg');
+	background-size: auto 28px;
+	background-position: 5px center;
+}
+#page-body section .sys_halls-key-info p.sys_beds, .sys_halls-details-list li.sys_beds, .icons-list .icons-list-beds {
+	background-image: url('/_design/img/halls/bed-icon.svg');
+}
+.sys_halls-key-info p.sys_bathrooms, .icons-list .icons-list-bathrooms {
+	background-image: url('/_design/img/halls/bathroom-icon.svg');
+}
+#page-body section .sys_halls-key-info p.sys_nearest-campus, #page-body section .sys_halls-details-list li.sys_location, .icons-list .icons-list-location {
+	background-image: url('/_design/img/halls/campus-icon.svg');
+	background-size: auto 27px;
+	background-position: 8px center;
+}
+.icons-list {
+	margin-left: 0;
+}
+#page-body section .sys_halls-details-list li, .icons-list li {
+	list-style-image: none;
+	list-style-type: none;
+	background-repeat: no-repeat;
+	padding-left: 38px;
+	background-size: auto 22px;
+	background-position: center left;
+	margin-bottom: 8px;
+}
+#page-body section .icons-list li {
+	padding-left: 44px;
+	margin-bottom: 10px;
+}
+#page-body section .sys_halls-details-list li.sys_location, .icons-list .icons-list-location {
+	background-position: 8px center;
+	background-size: auto 22px;
+}
+#page-body section .sys_halls-details-list li.sys_contract, .icons-list .icons-list-contract {
+	background-position: 5px center;
+}
+.icons-list .icons-list-contract {
+	background-size: auto 24px;
+}
+#page-body section .sys_halls-details-list li.sys_bathrooms, .icons-list .icons-list-bathrooms {
+	background-image: url('/_design/img/halls/bathroom-icon.svg');
+	background-position: left 6px;
+}
+#page-body section .sys_halls-details-list li.sys_building, .icons-list .icons-list-building {
+	background-image: url('/_design/img/halls/building-icon-black.svg');
+	background-size: auto 28px;
+	background-position: 2px center;
+}
+.sys_halls-key-info p.sys_floorplan, .icons-list .icons-list-floorplan {
+	background-image: url('/_design/img/halls/floorplan-icon-black.svg');
+	background-position: 5px center;
+}
+@media screen and (max-width:1100px) {
+	#page-body section .sys_halls-key-info p, #page-body section .sys_highlight-box .sys_halls-included-list li {
+	 	background-size: auto 20px;	
+	}
+	#page-body section .sys_halls-key-info p.sys_contract {
+		background-size: auto 20px;
+	}
+	#page-body section .sys_halls-key-info p.sys_nearest-campus {
+		background-size: auto 17px;
+	}
+	#page-body section .sys_highlight-box .sys_halls-included-list li.sys_utility {
+  		background-size: auto 17px;
+	}
+}

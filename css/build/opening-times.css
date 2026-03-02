@@ -1,0 +1,43 @@
+#page-body .opening-hours-list {
+    padding-top: 10px;
+}
+
+#page-body .opening-hours-list .list-header {
+    text-transform: none;
+    padding-left: 20px !important;
+    display: inline !important;
+    font-family: 'Figtree', Arial, sans-serif;
+    font-size: 1.1em !important;
+    font-weight: normal;
+}
+
+#page-body .opening-hours-list .ui-accordion-header {
+    background: url(/_design/img/go-header-link-bg-13px-down.gif) no-repeat scroll left 12px transparent; cursor: pointer;
+}
+
+#page-body .opening-hours-list .ui-accordion-header.ui-accordion-header-active {
+    background: url(/_design/img/go-header-link-bg-13px-close.gif) no-repeat scroll left 12px transparent;
+}
+
+.opening-hours-list table.more-times, .opening-hours-list table.more-times td {
+    border: none;
+}
+.opening-hours-list table.more-times {
+    margin-top: 1em;
+}
+
+.opening-hours-list table.more-times tr {
+    line-height: 1em;
+}
+
+.opening-hours-list table.more-times .dayOfWeek {
+    width: 6em;
+}
+
+.opening-hours-list table.more-times tr:first-child td {
+    font-weight: bold;
+}
+
+.opening-hours-list table.more-times .clearing-hotline {
+    padding-top: 1em;
+}
