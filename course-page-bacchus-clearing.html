@@ -140,16 +140,57 @@
 					</button>
 					</p>
 					<div class="sys_next-steps-this-year">
-						<h4>Clearing 2025: Apply now</h4>
-						<p>Places are still available on this course to start in 2025. </p>
+						  <h4>Clearing 2026: Apply now</h4>
+						<p>Places are still available on this course to start in 2026. </p>
 						<p>If you have your results you can apply online for a place through Clearing.</p>
 						<div class="sys_cta-bar-primary sys_nosubtext">
-						<p>
-							<a class="sys_howtoapply iframe-lightbox-apply" href="#app-pop" title="Make an application">Apply online now</a>
-						</p>
+							<p>
+								<a class="sys_howtoapply iframe-lightbox-apply" href="#app-pop" title="Make an application">Apply online now</a>
+							</p>
 						</div>
-						<p>Our hotline opens <span class="phones-next-open"></span>.</p> 
-						<div class="opening-hours-list ui-accordion ui-widget ui-helper-reset" role="tablist"><h3 class="list-header ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>See our opening hours</h3><table class="more-times ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none; height: 290px;" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true"><tbody><tr><td class="dayOfWeek">Tuesday</td><td>CLOSED</td></tr><tr><td class="dayOfWeek">Wednesday</td><td>CLOSED</td></tr><tr><td class="dayOfWeek">Thursday</td><td>CLOSED</td></tr><tr><td class="dayOfWeek">Friday</td><td>CLOSED</td></tr><tr><td class="dayOfWeek">Saturday</td><td>CLOSED</td></tr><tr><td class="dayOfWeek">Sunday</td><td>CLOSED</td></tr><tr><td class="dayOfWeek">Monday</td><td>CLOSED</td></tr><tr><td colspan="2" class="clearing-hotline">Clearing hotline: 01273 644000</td></tr><tr></tr></tbody></table></div>			
+						<div class="opening-hours-content-open" style=""> 
+							<p style="margin-top: 16px;">You can also <a href="/clearing/contact/call-back.aspx">book a Clearing call back</a>, or if you need advice, call us on <a href="tel:+441273644000" class="telephone" title="Call us on 01273 644000">01273 644000</a></p>
+							<div class="opening-hours-list ui-accordion ui-widget ui-helper-reset" role="tablist"><h3 class="list-header ui-accordion-header ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>See our opening hours</h3><table class="more-times ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" style="display: table; height: 243px;" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false"><tbody><tr><td class="dayOfWeek">Thursday</td><td>9am - 5pm</td></tr><tr><td class="dayOfWeek">Friday</td><td>9am - 4.30pm</td></tr><tr><td class="dayOfWeek">Saturday</td><td>CLOSED</td></tr><tr><td class="dayOfWeek">Sunday</td><td>CLOSED</td></tr><tr><td class="dayOfWeek">Monday</td><td>9am - 5pm</td></tr><tr><td class="dayOfWeek">Tuesday</td><td>9am - 5pm</td></tr><tr><td class="dayOfWeek">Wednesday</td><td>9am - 5pm</td></tr></tbody></table></div>
+						</div>
+						<div class="opening-hours-content-closed" style="display: none;"> 
+							<p style="margin-top: 16px;">You can also <a href="/clearing/contact/call-back.aspx">book a Clearing call back</a>.</p> 
+							<p>Our hotline opens <span class="phones-next-open"></span>.</p> 
+							<div class="opening-hours-list"></div>
+						</div>
+						<script type="text/javascript">
+						(function($) {
+							$(function() {
+								if (!$("#app-pop").length) {
+									$("body").append('<div style="display: none;" id="app-pop"><p><a class="sys_pop-up-button track_clearing-app-intent" href="/appform" title="I\'m a UK/Home student">I\'m a UK/Home student</a></p><p><a class="sys_pop-up-button track_int-clearing-intent" href="/clearing/how-to-apply-through-clearing/international-students/apply-through-clearing.aspx"  title="I\'m an overseas student">I\'m an overseas student</a></p></div>');
+								}
+
+								var whenString = null;
+								var timeout = 60000; // 60,000 ms = 1 minute
+
+								getHoursWithDelay(whenString, timeout);
+
+								function getHoursWithDelay(whenString, delay){
+									getOpeningHoursWithNextOpen(whenString);
+									
+									// Only called when testing, advance whenString by delay
+									if(whenString !== null){
+										console.log("Called getOpenHours " + whenString);
+										var dt = new Date(whenString);
+										if(!isNaN(dt.getTime())){
+											dt.setTime(dt.getTime() + delay);
+											whenString = dt.toISOString();
+										}
+									}
+
+									setTimeout(function() {
+										getHoursWithDelay(whenString, delay);
+									}, delay);
+								}
+								
+							}); //close $(function() {
+						})(jQuery);
+						</script>
+	
 					</div>  
 					<div class="sys_next-steps-next-year" style="display: none;">
 						<p>Sign up for our email updates including news about our courses and how to apply.</p>
