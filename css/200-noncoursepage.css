@@ -145,7 +145,7 @@ body.sys_top-nav-fixed #top-nav ul#top-nav-menu .sys_mega-menu { top: 45px; }
 #page-body aside p.sys_pullquote-attr { color: #333; font-size: 1rem; padding-bottom: 32px; padding-top: 12px; text-align: center; }
 /* pull stat for non-course pages */
 #page-body aside.sys_pullstat { padding: 32px 0 32px 0; border: none; margin: 0; }
-#page-body aside.sys_pullstat p, #page-body aside.sys_pullstat li { color: #c92ead; font-size: 1.55em; line-height: 1.1em; }
+#page-body aside.sys_pullstat p, #page-body aside.sys_pullstat li { color: #323e48; font-size: 1.55em; line-height: 1.1em; }
 #page-body aside.sys_pullstat li { list-style-image: url("/_design/img/icon-arrow-10px-pink.png"); margin-bottom: 6px; }
 #page-body aside p.sys_pullstat-attr { font-size: 1.1em; padding-top: 16px; }
 /* to mimic key facts box from course page */
@@ -585,6 +585,10 @@ section .sys_two-col-alts-text h2, section .sys_two-col-alts-text h3, section .s
 	background: #da3949; 
 }
 
+.sys_two-col-alts-text ul {
+	list-style-type: none;
+}
+
 @media screen and (min-width:767px) { 
 	
 	.sys_two-col-alts-content {
@@ -630,6 +634,9 @@ section .sys_two-col-alts-text h2, section .sys_two-col-alts-text h3, section .s
 	section .sys_two-col-alts-text h2, section .sys_two-col-alts-text h3, section .sys_two-col-alts-text h4 {
 		font-size: 2.2em;
 		margin-bottom: 20px;
+	}
+	.sys_two-col-alts-text ul {
+		list-style-type: disc;
 	}
 }
 
@@ -718,4 +725,134 @@ section .sys_image-card h2 a, section .sys_image-card h3 a, section .sys_image-c
 	.sys_image-card {
 		max-width: 353px;
 	}
+}
+
+.sys_related-page-links { border: 1px solid #ca3544; border-radius: 16px; padding: 24px; }
+.sys_related-page-links ul { margin-bottom: 0; }
+section .sys_related-page-links h2, section .sys_related-page-links h3, section .sys_related-page-links h4 { margin-bottom: 16px; margin-top: 0; font-size: 1.6rem; }
+
+.imagecaption-tight, #page-body section .imagecaption-tight { line-height: 1.2em; color: #000; font-size: 1.2em; margin-top: -8px; margin-bottom: 24px !important; }
+
+/* open days page divided by journey stage */
+#page-body section.sys_sticky-box-panel {
+	padding-top: 0; 
+}
+.sys_sticky-box-panel .sys_container {
+	border-top: 1px solid #ccc;
+	padding-top: 32px;
+}
+.sys_sticky-box-panel .sys_sticky {
+	position: relative;
+	padding-top: 42px;
+}
+
+#page-body section.sys_sticky-box-panel .sys_sticky p.sys_sub-head-top {
+	position: absolute;
+	top: 0;
+	font-size: 1rem;
+}
+
+.sys_sticky-box-panel .sys_sticky h2, .sys_sticky-box-panel .sys_sticky h3 {
+	margin-top: 0;
+}
+
+.sys_flex-boxes {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap: 12px;
+	margin: 32px auto auto auto;
+}
+.sys_flex-event-box {
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	padding: 16px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap: 16px;
+}
+.sys_flex-event-box .sys_details {
+	flex: 1 0 auto;
+}
+.sys_logistics {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 8px;
+	align-items: center;
+	font-weight: bold;
+}
+.sys_logistics div {
+	flex: 0 1 auto;
+	font-size: 0.75rem;
+}
+.sys_logistics .sys_location {
+	background: #eee;
+	border: 1px solid #bbb;
+	border-radius: 3px;
+	padding: 3px 6px;
+}
+.sys_flex-event-box .sys_details {
+	order: 2;
+}
+#page-body section.sys_sticky-box-panel .sys_flex-event-box .sys_details h3, #page-body section .sys_flex-event-box .sys_details h4 {
+	font-size: 1.2rem;
+}
+#page-body section.sys_sticky-box-panel .sys_flex-event-box .sys_details p, #page-body section .sys_flex-event-box .sys_link p {
+	margin-bottom: 0;
+	font-size: 1.1rem;
+}
+.sys_flex-event-box .sys_link {
+	order: 3;
+}
+
+.sys_additional-link {
+	width: 100%;
+	flex: 1 0 auto;
+	background: #eee;
+	padding: 18px 24px;
+	box-sizing: border-box;
+	font-size: 1rem;
+	border-radius: 12px;
+}
+#page-body section.sys_sticky-box-panel .sys_additional-link p {
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+.sys_additional-link span {
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 12px;
+}
+
+@media screen and (min-width:767px) { 
+	.sys_sticky-box-panel .sys_sticky {
+		position: sticky; top: 10px;
+	}
+	.sys_flex-boxes {
+		margin-top: auto;
+	}
+}
+
+@media screen and (min-width:980px) { 
+	.sys_sticky-box-panel .sys_sticky {
+		top: 62px;
+	}
+	.sys_flex-boxes {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		max-width: 100%;
+	}
+	.sys_flex-event-box {
+		flex: 1 1 auto;
+		width: calc(50% - 6px);
+	}
+}
+
+@media screen and (min-width:1100px) { 
+
 }
