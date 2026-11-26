@@ -734,8 +734,12 @@ section .sys_related-page-links h2, section .sys_related-page-links h3, section 
 .imagecaption-tight, #page-body section .imagecaption-tight { line-height: 1.2em; color: #000; font-size: 1.2em; margin-top: -8px; margin-bottom: 24px !important; }
 
 /* open days page divided by journey stage */
+body {
+	counter-reset: sticky-box-panels;
+}
 #page-body section.sys_sticky-box-panel {
 	padding-top: 0; 
+	counter-increment: sticky-box-panels;
 }
 .sys_sticky-box-panel .sys_container {
 	border-top: 1px solid #ccc;
@@ -754,6 +758,25 @@ section .sys_related-page-links h2, section .sys_related-page-links h3, section 
 
 .sys_sticky-box-panel .sys_sticky h2, .sys_sticky-box-panel .sys_sticky h3 {
 	margin-top: 0;
+ 	padding-left: 36px;
+  	position: relative;
+}
+
+.sys_sticky-box-panel .sys_sticky h2::before, .sys_sticky-box-panel .sys_sticky h3::before {
+    content: counter(sticky-box-panels);
+	background: #ca3544;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	line-height: 1.85rem;
+	width: 1.79rem;
+	height: 1.79rem;
+	font-weight: normal;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	font-size: 1.4rem;
 }
 
 .sys_flex-boxes {
@@ -835,6 +858,9 @@ section .sys_related-page-links h2, section .sys_related-page-links h3, section 
 	.sys_flex-boxes {
 		margin-top: auto;
 	}
+	.sys_sticky-box-panel .sys_sticky h2::before, .sys_sticky-box-panel .sys_sticky h3::before {
+    	top: 8px;
+	}
 }
 
 @media screen and (min-width:980px) { 
@@ -846,6 +872,9 @@ section .sys_related-page-links h2, section .sys_related-page-links h3, section 
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		max-width: 100%;
+	}
+	.sys_sticky-box-panel .sys_sticky h2::before, .sys_sticky-box-panel .sys_sticky h3::before {
+    	top: 5px;
 	}
 	.sys_flex-event-box {
 		flex: 0 1 auto;
